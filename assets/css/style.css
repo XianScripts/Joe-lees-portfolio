@@ -388,9 +388,7 @@ body {
   position: relative;
   top: 160px;
 }
-.storyheader {
- 
-}
+
 
 
 
@@ -735,7 +733,31 @@ textarea.contact-input {
   .portfolio-list li:nth-child(even) .card-content { margin-inline-start: 50%; }
 
 }
+@media (min-width: 767px) {
+  /* Adjust the header positioning */
+  .header {
+    position: relative; /* Change it from fixed to relative or static */
+    background-color: var(--space-cadet); /* You can set a background color if needed */
+  }
+  
+  .header .container {
+    padding-inline: 20px; /* Adjust the container padding as needed */
+  }
 
+  .logo {
+    color: var(--white);
+    font-family: var(--ff-poppins);
+    font-size: 2.4rem;
+  }
+
+  .navbar {
+    position: static; /* Change it from absolute to static or relative */
+    visibility: visible;
+    opacity: 1;
+    background-color: var(--space-cadet); /* Set a background color if needed */
+  }
+
+}
 
 
 
