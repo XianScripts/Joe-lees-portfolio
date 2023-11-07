@@ -1,0 +1,77 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the background color */
+body {
+    background-color: #022F40;
+    color: #FFFFFF; /* Text color on the dark background */
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #183446;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Create a container for the grid layout */
+#container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+/* Style the individual grid items */
+.grid-item {
+    background-color: #0090C1;
+    padding: 20px;
+}
+
+/* Style headings and paragraph text */
+h1, h2 {
+    color: #FFFFFF;
+}
+
+/* Style links */
+a {
+    color: #38AECC;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    #container {
+        grid-template-columns: 1fr;
+    }
+}
