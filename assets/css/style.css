@@ -513,20 +513,24 @@ body {
 }
 .smart-city {
   margin-bottom: 10vh;
+  width: 180px;
+}
+img[alt="facebook-infographic"] {
+  height: 200px;
 }
 
 /* Image grid container */
 .img-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: -50px;
-  
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 60rem;
 }
 
 .img-paragraph {
   font-size: larger;
   text-decoration: underline;
+  color: aliceblue;
 }
 
 /*-----------------------------------*\
