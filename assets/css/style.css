@@ -503,7 +503,30 @@ body {
   text-align: center;
   color: aliceblue;
   text-decoration: underline;
+  margin-bottom: 3vh;
+}
+
+.facebook-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.smart-city {
   margin-bottom: 10vh;
+}
+
+/* Image grid container */
+.img-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: -50px;
+  
+}
+
+.img-paragraph {
+  font-size: larger;
+  text-decoration: underline;
 }
 
 /*-----------------------------------*\
