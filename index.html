@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joe Lees - Marketing Student at USF</title>
-
+  <!-- Meta Keywords -->
+  <meta name="keywords" content="Marketing Strategist, Digital Marketing Expert, Branding Specialist, Content Creation, SEO, Social Media Management, Marketing Analytics, Campaign Development, Marketing Trends, Marketing Consultant">
+  
   <!-- 
     - favicon
   -->
@@ -659,6 +661,27 @@
           }
         });
       });
+    });
+  </script>
+
+       <!-- JavaScript for Dynamic Meta Description -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const pageDescriptions = {
+        home: "Meet Joe Lees, a marketing student at the University of South Florida. Explore insights on effective marketing strategies and the art of making customers feel smart.",
+        about: "Embark on my journey from England to Florida, where a love for baseball and scuba diving intertwines with a passion for marketing. Follow my story as a student shaping a vision at the University of South Florida.",
+        journey: "Charting my transition from England to Florida, explore my passion for baseball, scuba diving, and the exciting world of marketing in a dynamic infographic journey.",
+        work: "Explore my summer stint at Smart City Telecom, crafting blogs, managing socials, and diving into SEO and CRM. Delve into my fall volunteer role at Savvy Giving by Design, advocating for children's wellness through impactful social media campaigns and event promotions.",
+        resume: "Results-focused marketing pro adept at impactful campaigns, content strategies, and data-driven insights. Excels in team collaboration and possesses a strong skill set across diverse marketing areas.",
+        contact: "Get in touch for collaborations or inquiries. Reach me via email, phone, or connect on LinkedIn for professional networking and discussions.",
+        "resume-download": "Explore my comprehensive resume for a detailed overview of my experience, skills, and achievements in the realm of marketing and beyond."
+      };
+
+      const currentPage = document.body.getAttribute("data-page");
+      const metaDescription = document.querySelector('meta[name="description"]');
+      if (currentPage && pageDescriptions[currentPage]) {
+        metaDescription.setAttribute("content", pageDescriptions[currentPage]);
+      }
     });
   </script>
 
